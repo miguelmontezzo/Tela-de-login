@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #f5ebe0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+.card{
+    background-color: #264653;
+    padding: 30px;
+    border-radius: 4%;
+    width: 400px;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5ebe0;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #f5ebe0;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    color: #f5ebe0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #f5ebe0;
+
+}
+
+.label-float label{
+    color: #f5ebe0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out ;
+}
+
+.label-float input:valid + label,
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #f5ebe0;
+}
+
+button{
+    background-color: transparent;
+    border-color: #f5ebe0;
+    color: #f5ebe0;
+    padding: 7px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+    }
+
+    button:hover{
+        background-color: #f5ebe0;
+        color: #264653;
+    }
+
+    .justify-center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fa-eye{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+        color: #f5ebe0;
+    }
+  
+    #msgErro{
+    text-align: center;
+    color: #f5ebe0;
+    background-color: #e76f51;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    }
+
+    #msgSucesso{
+        text-align: center;
+        color: #f5ebe0;
+        background-color: #2a9d8f;
+        padding: 10px;
+        border-radius: 4px;
+        display: none;   
+    }
+   
+
+    
